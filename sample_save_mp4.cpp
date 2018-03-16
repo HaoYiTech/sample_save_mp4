@@ -1,6 +1,19 @@
-
-// sample_save_mp4.cpp : 定义应用程序的类行为。
-//
+/******************************************************
+ * 浩一科技，提供云录播、云监控的全平台无插件解决方案。
+ * 支持按需直播，多点布控，分布式海量存储，动态扩容；
+ * 支持微信扫码登录，全平台帐号统一，关联微信小程序；
+ * 支持多种数据输入：摄像头IPC、rtmp、rtsp、MP4文件；
+ * 支持全实时、全动态、全网页管理，网页前后台兼容IE8；
+ * 支持多终端无插件自适应播放，flvjs/hls/rtmp自动适配；
+ ******************************************************
+ * 官方网站 => https://myhaoyi.com
+ * 技术博客 => http://blog.csdn.net/haoyitech
+ * 开源代码 => https://github.com/HaoYiTech/
+ * 云监控群 => 483663026（QQ群）
+ * 云录播群 => 630379661（QQ群）
+ ******************************************************
+ * VS2010自动生成的App类实现代码
+ ******************************************************/
 
 #include "stdafx.h"
 #include "sample_save_mp4.h"
@@ -10,32 +23,16 @@
 #define new DEBUG_NEW
 #endif
 
-
-// Csample_save_mp4App
-
 BEGIN_MESSAGE_MAP(Csample_save_mp4App, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
-
-// Csample_save_mp4App 构造
-
 Csample_save_mp4App::Csample_save_mp4App()
 {
-	// 支持重新启动管理器
 	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_RESTART;
-
-	// TODO: 在此处添加构造代码，
-	// 将所有重要的初始化放置在 InitInstance 中
 }
 
-
-// 唯一的一个 Csample_save_mp4App 对象
-
 Csample_save_mp4App theApp;
-
-
-// Csample_save_mp4App 初始化
 
 BOOL Csample_save_mp4App::InitInstance()
 {

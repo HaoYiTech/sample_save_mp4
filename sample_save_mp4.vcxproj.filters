@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{7778b4f1-ba59-4f45-aead-f03686c6d448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libmp4v2">
+      <UniqueIdentifier>{101bfc33-11a0-4476-a483-d4abc7495116}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
@@ -39,6 +45,42 @@
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="common\GMError.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\HYDefine.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\HyperLink.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\OSThread.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Socket.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\SocketUtils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\StrPtrLen.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\tinyxml.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\UDPSocket.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\UtilTool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="libmp4v2\LibMP4.h">
+      <Filter>libmp4v2</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ReadSPS.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sample_save_mp4.cpp">
@@ -49,6 +91,42 @@
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common\HyperLink.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\OSThread.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\Socket.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\SocketUtils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\StrPtrLen.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tinyxml.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tinyxmlerror.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\tinyxmlparser.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\UDPSocket.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="common\UtilTool.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="libmp4v2\LibMP4.cpp">
+      <Filter>libmp4v2</Filter>
+    </ClCompile>
+    <ClCompile Include="common\ReadSPS.cpp">
+      <Filter>common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

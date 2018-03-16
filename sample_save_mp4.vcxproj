@@ -41,6 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -48,13 +49,16 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MP4V2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>common;libmp4v2</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>libmp4v2</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Version.lib;Psapi.lib;libmp4v2D.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -99,6 +103,18 @@
     <None Include="res\sample_save_mp4.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="common\GMError.h" />
+    <ClInclude Include="common\HYDefine.h" />
+    <ClInclude Include="common\HyperLink.h" />
+    <ClInclude Include="common\OSThread.h" />
+    <ClInclude Include="common\ReadSPS.h" />
+    <ClInclude Include="common\Socket.h" />
+    <ClInclude Include="common\SocketUtils.h" />
+    <ClInclude Include="common\StrPtrLen.h" />
+    <ClInclude Include="common\tinyxml.h" />
+    <ClInclude Include="common\UDPSocket.h" />
+    <ClInclude Include="common\UtilTool.h" />
+    <ClInclude Include="libmp4v2\LibMP4.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="sample_save_mp4.h" />
     <ClInclude Include="sample_save_mp4Dlg.h" />
@@ -106,6 +122,18 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="common\HyperLink.cpp" />
+    <ClCompile Include="common\OSThread.cpp" />
+    <ClCompile Include="common\ReadSPS.cpp" />
+    <ClCompile Include="common\Socket.cpp" />
+    <ClCompile Include="common\SocketUtils.cpp" />
+    <ClCompile Include="common\StrPtrLen.cpp" />
+    <ClCompile Include="common\tinyxml.cpp" />
+    <ClCompile Include="common\tinyxmlerror.cpp" />
+    <ClCompile Include="common\tinyxmlparser.cpp" />
+    <ClCompile Include="common\UDPSocket.cpp" />
+    <ClCompile Include="common\UtilTool.cpp" />
+    <ClCompile Include="libmp4v2\LibMP4.cpp" />
     <ClCompile Include="sample_save_mp4.cpp" />
     <ClCompile Include="sample_save_mp4Dlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -119,4 +147,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="sample_save_mp4.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>
